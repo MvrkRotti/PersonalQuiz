@@ -226,7 +226,7 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="h7v-k0-fzz">
                                 <rect key="frame" x="0.0" y="96" width="375" height="4"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcz-AO-dDr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtB-t1-K2d">
                                 <rect key="frame" x="20" y="108" width="335" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -237,24 +237,24 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Vcn-M5-BGl" firstAttribute="trailing" secondItem="rWW-NY-lIt" secondAttribute="trailing" constant="20" id="1ec-cw-dKf"/>
+                            <constraint firstItem="xtB-t1-K2d" firstAttribute="top" secondItem="h7v-k0-fzz" secondAttribute="bottom" constant="8" id="38i-F9-X6N"/>
                             <constraint firstItem="ztD-A5-zsJ" firstAttribute="leading" secondItem="Vcn-M5-BGl" secondAttribute="leading" constant="20" id="7V0-WV-hPq"/>
                             <constraint firstItem="Vcn-M5-BGl" firstAttribute="trailing" secondItem="h7v-k0-fzz" secondAttribute="trailing" id="BoS-tV-88P"/>
-                            <constraint firstItem="qcz-AO-dDr" firstAttribute="leading" secondItem="Vcn-M5-BGl" secondAttribute="leading" constant="20" id="CfU-dD-d0G"/>
                             <constraint firstItem="ztD-A5-zsJ" firstAttribute="centerY" secondItem="xxo-gy-4ob" secondAttribute="centerY" constant="16" id="G2c-WL-NLf">
                                 <variation key="heightClass=compact-widthClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstItem="Vcn-M5-BGl" firstAttribute="trailing" secondItem="ztD-A5-zsJ" secondAttribute="trailing" constant="20" id="HmC-ou-p5K"/>
-                            <constraint firstItem="qcz-AO-dDr" firstAttribute="top" secondItem="h7v-k0-fzz" secondAttribute="bottom" constant="8" id="S8Z-hB-phQ"/>
+                            <constraint firstItem="Vcn-M5-BGl" firstAttribute="trailing" secondItem="xtB-t1-K2d" secondAttribute="trailing" constant="20" id="WJ5-yi-Xku"/>
                             <constraint firstItem="h7v-k0-fzz" firstAttribute="leading" secondItem="Vcn-M5-BGl" secondAttribute="leading" id="X0a-wY-iJH"/>
                             <constraint firstItem="rWW-NY-lIt" firstAttribute="centerY" secondItem="xxo-gy-4ob" secondAttribute="centerY" constant="16" id="YeJ-kI-2pJ">
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
-                            <constraint firstItem="Vcn-M5-BGl" firstAttribute="trailing" secondItem="qcz-AO-dDr" secondAttribute="trailing" constant="20" id="kFv-d7-qoW"/>
                             <constraint firstItem="pcO-D4-Xv0" firstAttribute="centerY" secondItem="xxo-gy-4ob" secondAttribute="centerY" constant="16" id="mKv-wz-XuT">
                                 <variation key="heightClass=compact-widthClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstItem="h7v-k0-fzz" firstAttribute="top" secondItem="Vcn-M5-BGl" secondAttribute="top" id="n3g-j6-R6M"/>
                             <constraint firstItem="rWW-NY-lIt" firstAttribute="leading" secondItem="Vcn-M5-BGl" secondAttribute="leading" constant="20" id="vt7-Xc-XNA"/>
+                            <constraint firstItem="xtB-t1-K2d" firstAttribute="leading" secondItem="Vcn-M5-BGl" secondAttribute="leading" constant="20" id="xN9-E4-IWY"/>
                             <constraint firstItem="Vcn-M5-BGl" firstAttribute="trailing" secondItem="pcO-D4-Xv0" secondAttribute="trailing" constant="20" id="yZi-YQ-OXs"/>
                             <constraint firstItem="pcO-D4-Xv0" firstAttribute="leading" secondItem="Vcn-M5-BGl" secondAttribute="leading" constant="20" id="zcQ-zE-3Pe"/>
                         </constraints>
@@ -268,6 +268,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="multipleStackView" destination="pcO-D4-Xv0" id="Gaa-wb-1kV"/>
+                        <outlet property="questionLabel" destination="xtB-t1-K2d" id="dYe-UN-g6O"/>
+                        <outlet property="questionProgressView" destination="h7v-k0-fzz" id="3mJ-e8-pjU"/>
                         <outlet property="rangedSlider" destination="dt6-Sm-jZa" id="0iV-ge-TH9"/>
                         <outlet property="rangedStackView" destination="ztD-A5-zsJ" id="5ep-uw-Xyx"/>
                         <outlet property="singleStackView" destination="rWW-NY-lIt" id="HPY-cs-reF"/>
